@@ -1,0 +1,7 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1188
+
+This is a super-simple bash script for cleaning up my ~/.vim/swap directory.  I have vim put all its swap files there (set directory=~/.vim/swap) so I can find them in one place.
+
+When I run this script, it recovers using each swap file and compares the results against the current version of the file.  If there is no difference, the swap file is automatically deleted. If there are differences, vimdiff is launched so I can recover any changes saved only in the swap file.  When the script is don running, all my swap files are gone.
+
+Warning: This script has only been tested on Linux, and that only a couple times. It may accidentally delete any file on your system.  If you have any other vim sessions running, I assume bad things will happen if you also run this script.  Use at your own risk!
